@@ -1,0 +1,24 @@
+input {
+  border: 1px solid #E2E8F0;
+  padding:12px;
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+div {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+}
+
+p {
+  font-weight: 500;
+  margin-bottom:12px;
+  font-size: 17px;
+}
+
+input:focus {
+  outline: none;
+  border-color:#805AD5 ;
+}

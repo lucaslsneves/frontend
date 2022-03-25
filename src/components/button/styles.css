@@ -1,15 +1,23 @@
 button {
-    padding: 10px;
+    padding: 12px;
     border: 0;
-    border-radius:4px;
+    border-radius:6px;
     font-weight: bold;
     cursor:pointer;
+    transition: 200ms;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom:21px;
 }
 
 .add-button {
-    background-color: #7159c1;
+    background-color: #805AD5;
     color: #fff;
-  
+}
+
+.add-button:hover {
+    background-color: #6B46C1;
 }
 
 .remove-button {

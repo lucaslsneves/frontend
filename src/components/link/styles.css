@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  color:#805AD5;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

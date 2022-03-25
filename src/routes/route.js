@@ -7,26 +7,20 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  const signed = localStorage.getItem('isAuthenticated')
+  const token = localStorage.getItem('token')
 
-  if ((signed === "false" || !signed) && isPrivate) {
+  if (!token && isPrivate) {
     return <Redirect to="/" />;
   }
 
-  if (signed === "true" && !isPrivate) {
+  if (token && !isPrivate) {
     return <Redirect to="/dashboard" />;
   }
 
   const Component = component
 
   return (
-    (signed === 'false' || !signed) ?
-      <Route
-        {...rest}
-        render={(props) => (
-          <Component {...props} />
-        )}
-      /> : <Route
+    <Route
         {...rest}
         render={(props) => (
           <Component {...props} />

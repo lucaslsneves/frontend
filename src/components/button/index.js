@@ -1,6 +1,6 @@
 import './styles.css'
-export default function Button() {
+export default function Button({children}) {
     return (
-        <button className="add-button">Adicionar</button>
+        <button className="add-button">{children}</button>
     )
 }

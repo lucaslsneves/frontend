@@ -13,7 +13,7 @@ export default function Routes() {
     <Switch>
       <Route path="/" exact component={Login} />
       <Route path="/signup" exact component={SignUp} />
-      <Route path="/dashboard" exact component={Dashboard}  />
+      <Route path="/dashboard" exact component={Dashboard} isPrivate />
     </Switch>
   );
 }
